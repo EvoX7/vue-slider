@@ -1,6 +1,8 @@
 const app = new Vue({
     el: "#app",
     data: {
+        index: 0,
+        
         slides: [
             {
                 image: "img/01.jpg",
@@ -30,7 +32,7 @@ const app = new Vue({
                 text: "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.",
             },
         ],
-
+        index: 0,
     },
 
     methods: {
@@ -40,7 +42,7 @@ const app = new Vue({
                 this.index = 0;
             }
         },
-    
+
         prevSlide() {
             this.index--;
             if (this.index < 0) {
